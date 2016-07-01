@@ -14,9 +14,13 @@ import {Dragula, DragulaService} from 'ng2-dragula/ng2-dragula';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives: [Dragula, MD_BUTTON_DIRECTIVES,MdIcon,MdToolbar,MD_SIDENAV_DIRECTIVES,MD_LIST_DIRECTIVES,MD_CARD_DIRECTIVES,MD_PROGRESS_CIRCLE_DIRECTIVES],
-  viewProviders: [DragulaService],
-  providers: [MdIconRegistry]
+  providers: [MdIconRegistry,DragulaService]
 })
 export class AppComponent {
-  title = 'app works!';
+  todos = [
+    {'titulo':'Titulo 1', 'subtitulo':'Subititulo 1'},
+    {'titulo':'Titulo 2', 'subtitulo':'Subititulo 2'},
+    {'titulo':'Titulo 3', 'subtitulo':'Subititulo 3'},
+    {'titulo':'Titulo 4', 'subtitulo':'Subititulo 4'}
+  ];
 }

@@ -13,19 +13,22 @@ footer {
   text-align: center;
   padding-top: 13vh;
 }
-md-sidenav{
-  width:30%;
+md-sidenav {
+  width: 30%;
 }
 .app-content {
   margin-top: 2vh;
   margin-bottom: 2vh;
+
+}
+.list-list {
+  flex-flow: row wrap;
+  display: flex;
 }
 .cards-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-flow: row wrap;
 }
 .cards-list md-card {
   margin: 1vw;
@@ -38,23 +41,38 @@ md-sidenav{
   flex-basis: 100%;
   text-align: center;
 }
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
 @media (min-width: 600px) {
-  .cards-list md-card:nth-last-child(n) {
+  .flex-item {
     flex-basis: 40%;
     flex-wrap: wrap;
-    flex-direction: column;
   }
 }
 @media (min-width: 1024px) {
-  .cards-list md-card:nth-last-child(n) {
+  .flex-item {
     flex-basis: 30%;
     flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .app-spinner {
-    height: 30px;
-    width: 30px;
-    display: inline-block;
   }
   md-sidenav {
     width: 20%;

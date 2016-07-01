@@ -31,41 +31,94 @@
   <button md-mini-fab style="float:right;">
      <md-icon class="md-24">add</md-icon>
   </button-->
-  <div class="app-content container">
+  <div class="app-content container wrapper">
+    <div class="list-list">
 
-    <div class="cards-list">
+      <div class="cards-list flex-item" [dragula]='"first-bag"'>
+        <div>
+          <h3>Titulo</h3>
+        </div>
 
-      <md-card class="flex-item" [dragula]='"first-bag"'>
-        <md-card-title-group>
-          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
-          <md-card-title>Titulo do card</md-card-title>
-          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
+        <md-card *ngFor="let todo of todos">
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>{{todo.titulo}}</md-card-title>
+            <md-card-subtitle>{{todo.subtitulo}}</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+      </div>
+      <div class="cards-list flex-item" [dragula]='"first-bag"'>
+        <div>
+          <h3>Titulo</h3>
+        </div>
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
 
-      <md-card class="flex-item" [dragula]='"first-bag"'>
-        <md-card-title-group>
-          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
-          <md-card-title>Titulo do card</md-card-title>
-          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
 
-      <md-card class="flex-item" [dragula]='"first-bag"'>
-        <md-card-title-group>
-          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
-          <md-card-title>Titulo do card</md-card-title>
-          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
 
-      <md-card class="flex-item" [dragula]='"first-bag"'>
-        <md-card-title-group>
-          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
-          <md-card-title>Titulo do card</md-card-title>
-          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+      </div>
+      <div class="cards-list flex-item" [dragula]='"first-bag"'>
+        <div>
+          <h3>Titulo</h3>
+        </div>
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+
+        <md-card>
+          <md-card-title-group>
+            <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>Titulo do card</md-card-title>
+            <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+      </div>
     </div>
   </div>
 
