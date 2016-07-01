@@ -7,12 +7,32 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  '@angular2-material': 'vendor/@angular2-material',
+  'dragula': 'vendor/dragula/dist/dragula.js',
+  'ng2-dragula': 'vendor/ng2-dragula'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'dragula': { defaultExtension: 'js' },
+  'ng2-dragula': {defaultExtension: 'js' }
 };
 
+// put the names of any of your Material components here
+const materialPkgs: string[] = [
+  'core',
+  'button',
+  'icon',
+  'toolbar',
+  'sidenav',
+  'list',
+  'progress-circle',
+  'card'
+];
+
+materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js` };
+});
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -26,10 +46,8 @@ const barrels: string[] = [
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
-
   // Thirdparty barrels.
   'rxjs',
-
   // App specific barrels.
   'app',
   'app/shared',
@@ -49,7 +67,9 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'dragula': 'vendor/dragula',
+    'ng2-dragula': 'vendor/ng2-dragula/ng2-dragula.js',
   },
   packages: cliSystemConfigPackages
 });

@@ -1,3 +1,76 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout>
+  <md-sidenav #start>
+    <md-nav-list>
+      <a md-list-item>Opção 1</a>
+      <a md-list-item>Opção 2</a>
+      <a md-list-item>Opção 3</a>
+      <hr>
+      <a md-list-item>Opção 4</a>
+    </md-nav-list>
+    <button md-button (click)="start.close()">Fechar</button>
+  </md-sidenav>
+  <div>
+    <md-toolbar color="warn">
+      <button md-icon-button (click)="start.open()">
+        <md-icon class="md-24">menu</md-icon>
+      </button>
+      <div class="main-toolbar">
+        Projeto Teste
+      </div>
+    </md-toolbar>
+  </div>
+  <!--span>{{title}}</span>
+  <button md-button>FLAT</button>
+  <button md-raised-button>RAISED</button>
+  <button md-icon-button>
+     <md-icon class="md-24">favorite</md-icon>
+  </button>
+  <button md-fab>
+     <md-icon class="md-24">add</md-icon>
+  </button>
+  <button md-mini-fab style="float:right;">
+     <md-icon class="md-24">add</md-icon>
+  </button-->
+  <div class="app-content container">
+
+    <div class="cards-list">
+
+      <md-card class="flex-item" [dragula]='"first-bag"'>
+        <md-card-title-group>
+          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+          <md-card-title>Titulo do card</md-card-title>
+          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+        </md-card-title-group>
+      </md-card>
+
+      <md-card class="flex-item" [dragula]='"first-bag"'>
+        <md-card-title-group>
+          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+          <md-card-title>Titulo do card</md-card-title>
+          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+        </md-card-title-group>
+      </md-card>
+
+      <md-card class="flex-item" [dragula]='"first-bag"'>
+        <md-card-title-group>
+          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+          <md-card-title>Titulo do card</md-card-title>
+          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+        </md-card-title-group>
+      </md-card>
+
+      <md-card class="flex-item" [dragula]='"first-bag"'>
+        <md-card-title-group>
+          <img md-card-sm-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+          <md-card-title>Titulo do card</md-card-title>
+          <md-card-subtitle>Subtitulo do card</md-card-subtitle>
+        </md-card-title-group>
+      </md-card>
+    </div>
+  </div>
+
+  <footer>
+    <span>Teste &copy;. Todos os testes reservados.</span>
+  </footer>
+
+</md-sidenav-layout>
