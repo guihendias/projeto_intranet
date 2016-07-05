@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -19,7 +20,7 @@ md-sidenav {
 .app-content {
   margin-top: 5vh;
   margin-bottom: 2vh;
-  min-height:55vh;
+  min-height: 55vh;
 }
 .list-list {
   flex-flow: row wrap;
@@ -29,9 +30,9 @@ md-sidenav {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.cards-list md-card {
-  margin: 1vw;
+  md-card {
+    margin: 1vw;
+  }
 }
 .flex-item {
   flex-grow: 1;
@@ -43,7 +44,7 @@ md-sidenav {
   margin: 0 !important;
   z-index: 9999 !important;
   opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
 }
 .gu-hide {
@@ -57,7 +58,7 @@ md-sidenav {
 }
 .gu-transit {
   opacity: 0.2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
 }
 @media (min-width: 600px) {
