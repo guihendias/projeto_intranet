@@ -10,10 +10,13 @@ html {
 footer {
   width: 100%;
   height: 30vh;
-  background: #3498db;
+  background: #ecf0f1;
   bottom: 0;
   text-align: center;
   padding-top: 13vh; }
+  footer span {
+    color: #a3b6bb;
+    font-size: 2em; }
 
 md-sidenav {
   width: 30%; }
