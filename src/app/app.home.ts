@@ -17,10 +17,9 @@ import { Headers, RequestOptions } from '@angular/http';
 @Component({
   moduleId: module.id,
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  templateUrl: 'app.home.html',
   directives: [ROUTER_DIRECTIVES,MD_RADIO_DIRECTIVES,MD_CHECKBOX_DIRECTIVES,MD_SLIDE_TOGGLE_DIRECTIVES,MD_INPUT_DIRECTIVES,Dragula, MD_BUTTON_DIRECTIVES,MdIcon,MdToolbar,MD_SIDENAV_DIRECTIVES,MD_LIST_DIRECTIVES,MD_CARD_DIRECTIVES,MD_PROGRESS_CIRCLE_DIRECTIVES],
   providers: [MdUniqueSelectionDispatcher,MdIconRegistry,DragulaService]
 })
-export class AppComponent {
+export class HomeComponent {
 }

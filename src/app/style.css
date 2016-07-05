@@ -17,9 +17,9 @@ md-sidenav {
   width: 30%;
 }
 .app-content {
-  margin-top: 2vh;
+  margin-top: 5vh;
   margin-bottom: 2vh;
-
+  min-height:55vh;
 }
 .list-list {
   flex-flow: row wrap;
@@ -34,12 +34,9 @@ md-sidenav {
   margin: 1vw;
 }
 .flex-item {
-  margin-top: 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  line-height: 150px;
   flex-basis: 100%;
-  text-align: center;
 }
 .gu-mirror {
   position: fixed !important;

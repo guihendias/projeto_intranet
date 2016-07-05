@@ -1,0 +1,61 @@
+TODO: {{todos.length}} DOING: {{doing.length}} DONE: {{done.length}}
+<div class="app-content container wrapper">
+  <div class="list-list">
+
+    <div class="cards-list flex-item">
+      <div>
+        <h3>ToDo</h3>
+      </div>
+      <div [dragulaModel]='todos' [dragula]='"first-bag"'>
+        <md-card *ngIf="todos.length == 0" style="visibility: hidden">
+        </md-card>
+        <md-card *ngFor="let todo of todos">
+          <md-card-header>
+            <img md-card-avatar src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>{{todo.titulo}}</md-card-title>
+            <md-card-subtitle>{{todo.subtitulo}}</md-card-subtitle>
+          </md-card-header>
+          <img md-card-image src="https://www.atmdigital.com.br/views/_images/logo.png">
+          <md-card-content>
+            <p>Here is some more content</p>
+          </md-card-content>
+        </md-card>
+      </div>
+    </div>
+
+    <div class="cards-list flex-item">
+      <div>
+        <h3>Doing</h3>
+      </div>
+      <div [dragulaModel]='doing' [dragula]='"first-bag"'>
+        <md-card *ngIf="doing.length == 0" style="visibility: hidden">
+        </md-card>
+        <md-card *ngFor="let d of doing">
+          <md-card-title-group>
+            <img md-card-md-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>{{d.titulo}}</md-card-title>
+            <md-card-subtitle>{{d.subtitulo}}</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+      </div>
+    </div>
+
+    <div class="cards-list flex-item">
+      <div>
+        <h3>Done</h3>
+      </div>
+      <div [dragula]='"first-bag"' [dragulaModel]='done'>
+        <md-card *ngIf="done.length == 0" style="visibility: hidden">
+        </md-card>
+        <md-card *ngFor="let d of done">
+          <md-card-title-group>
+            <img md-card-lg-image src="http://www.culturamix.com/wp-content/gallery/kon-do-bleach/kon-do-bleach-6.jpg">
+            <md-card-title>{{d.titulo}}</md-card-title>
+            <md-card-subtitle>{{d.subtitulo}}</md-card-subtitle>
+          </md-card-title-group>
+        </md-card>
+      </div>
+    </div>
+
+  </div>
+</div>

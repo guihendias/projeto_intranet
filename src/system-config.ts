@@ -27,7 +27,11 @@ const materialPkgs: string[] = [
   'sidenav',
   'list',
   'progress-circle',
-  'card'
+  'card',
+  'input',
+  'checkbox',
+  'slide-toggle',
+  'radio'
 ];
 
 materialPkgs.forEach((pkg) => {
@@ -43,6 +47,7 @@ const barrels: string[] = [
   '@angular/common',
   '@angular/compiler',
   '@angular/http',
+  '@angular/forms',
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
